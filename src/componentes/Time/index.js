@@ -9,10 +9,10 @@ const Time = ({ time, colaboradores,aoDeletar,mudarCor }) => {
                 type="color" 
                 className="input-cor" 
                 value={time.corSecundaria}
-                onChange={evento => mudarCor(evento.target.value, time.nome)}
+                onChange={evento => mudarCor(evento.target.value, time.id)}
             />
             
-            <h3 style={{ borderColor: time.corSecundaria }}>{time.nome}</h3>
+            <h3 style={{ borderColor: time.corSecundaria }}>{time.id}</h3>
 
             <div className='colaboradores'>
                 {colaboradores.map((colaborador, indice) =>{
